@@ -1,0 +1,21 @@
+a:hover{
+    text-decoration: none !important;
+    color: purple !important;
+}
+
+a, a:hover{
+    color: black;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition:all 0.4s ease 0s;
+    -ms-transition: all 0.4 ease 0s;
+    -o-transition: all 0.4 ease 0s;
+    transition: all 0.4 ease 0s;
+}
+
+dl, ol, ul{
+    margin: 0;
+    padding: 0;
+}
+.header-fix {
+    height:0px;
+}

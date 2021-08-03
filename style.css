@@ -1,0 +1,312 @@
+body{
+  font-family:sans-serif;  
+}
+
+header{
+    box-shadow: 0px -2px 9px 0px black;
+    position: fixed;
+    background: white;
+    width: 100%;
+}
+
+.post h3.title{
+font-size: 18px;
+font-weight: bold;
+}
+
+img, svg {
+    vertical-align: middle;
+    width: 293px;
+    height: 195px;
+}
+
+.image-post{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    max-width: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.image-post .meta-category-small{
+position: absolute;
+top: 10px;
+left: 10px;
+border-radius: 5px;
+line-height: 2;
+}
+
+.input-group{
+    left:450px;
+}
+
+.icon-inside{
+    position:absolute;
+    right: 10px;
+    top: 5px;
+    color: grey;
+}
+
+.content {
+    color:rgb(214, 36, 36);
+    line-height: 1.6;
+    font-size:13px;
+}
+
+span.date{
+    color: grey;
+}
+
+img.author-img{
+    border-radius: 25px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.post-category{
+    padding:10px;
+    color: brown;
+}
+.navbar{
+    padding: 0;
+}
+
+.color-2{
+    background-color: rgb(190, 126, 250);
+}
+
+.dropdown{
+    padding: 5px 10px;
+}
+.dropdown-menu{
+    min-width: 200px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 5px 40px black;
+    animation-name: slideAnimation;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+/*posts*/
+.posts-title{
+    margin: 10px 0 30px 0;
+}
+
+.post-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.posts-title .description{
+    color: gray;
+}
+/*posts*/
+
+.social-count-icons li{
+    width: 25%;
+    margin: 1px;
+    padding: 40px 0 20px 0;
+    background: whitesmoke !important;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.social-count-icons ul li a:before{
+    font-family: FontAwesome;
+    position:absolute;
+    top: 8px;
+    left:0;
+    right:0;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+
+}
+
+.post-category:hover{
+    color: aliceblue !important;
+}
+
+img.small-img {
+    vertical-align: super;
+    width: 150px;
+    height: 140px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 67px;
+    z-index: -1;
+}
+
+.widget {
+    margin-bottom: 20px;
+    display: grid;
+}
+
+.widget-title {
+    padding-bottom: 20px;
+    margin: 10px 0 25px 0;
+    border-bottom: 1px solid wheat;
+}
+
+.widget-title h2{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 20px;
+    line-height: 1.2s;
+}
+
+.feature-image img{
+    width: 100%;
+}
+
+.thumb{
+    height: 500px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.image-showcase-post{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index:-1;
+}
+
+.image-showcase-post .feature-thumb{
+    height: 500px;
+    position: relative;
+    width:100%;
+    background-size: cover;
+    background-position: center
+}
+
+
+.details *{
+    color: aliceblue;
+}
+
+.details{
+    transition: all .3s cubic-bezier(0.25, 0.1, 0.16, 2.18);
+    position: absolute;
+    bottom: -35px;
+    padding: 15px;
+    width: 100%;
+}
+
+.thumb .details .meta-info{
+    margin-top: 15px;
+}
+
+.image-showcase-post:hover .thumb .details {
+    bottom: 0;
+}
+
+footer{
+    background-color: black;
+    margin-top: 50px;
+    padding: 20px;
+}
+footer *{
+    color: azure;
+}
+
+footer .widget-title{
+border-bottom: 0;
+font-size: 22px;
+font-weight: bold;
+}
+
+.custom li{
+    line-height: 3;
+    border-bottom: 1px solid darkgray;
+}
+
+
+/*loading animasyonunun*/
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 100;
+  }
+  
+  .wrapper{
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+  }
+  
+  .box{
+    width: 50%;
+    height: 50%;
+    flex: 50%;
+    transition: 0.5s;
+    border: 2px solid white;
+  }
+  
+  .box:nth-child(1){
+    animation: load 1s infinite;
+  }
+  
+  .box:nth-child(2){
+    animation: load2 1s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .box:nth-child(3){
+    animation: load3 1s infinite;
+    animation-delay: 0.7s;
+  }
+  
+  .box:nth-child(4){
+    animation: load4 1s infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes load {
+    0% { background: rgba(231, 76, 60, 0); }
+    30% { background: rgb(231, 76, 60); }
+  
+    100% { background: rgba(231, 76, 60, 0); }
+  }
+  
+  @keyframes load2 {
+    0% { background: rgba(46, 204, 113, 0); }
+    30% { background: rgb(46, 204, 113); }
+  
+    100% { background: rgba(46, 204, 113, 0); }
+  }
+  
+  @keyframes load3 {
+    0% { background: rgba(230, 126, 34, 0); }
+    30% { background: rgb(230, 126, 34); }
+  
+    100% { background: rgba(230, 126, 34, 0); }
+  }
+  
+  @keyframes load4 {
+    0% { background: rgba(241, 196, 15, 0); }
+    30% { background: rgb(241, 196, 15); }
+  
+    100% { background: rgba(241, 196, 15, 0); }
+  }
